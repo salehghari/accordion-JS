@@ -1,0 +1,65 @@
+* {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+body {
+    margin-top: 2rem;
+}
+
+.accordion > div > span {
+    background-color: rgb(234, 135, 133);
+    display: block;
+    cursor: pointer;
+    padding : 15px;
+    opacity: 0.9;
+    transition: 0.3s;
+    background: linear-gradient(to bottom, hsl(353, 100%, 74%), hsl(353, 98%, 65%));
+    border-bottom: 1px solid rgba(209, 113, 111, 0.438);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+}
+
+.accordion > div:first-child > span {
+    border-radius: 10px 10px 0 0;
+}
+
+.accordion > div:last-child > span {
+    border-radius:0 0 10px 10px;
+    border-bottom: 0;
+}
+
+.accordion > div.show:last-child > span {
+    border-radius:0;
+}
+
+.accordion > div.show:last-child > div {
+    border-radius:0 0 10px 10px;
+}
+
+.accordion > div > span::after {
+    content: "\002b";
+    float: right;
+}
+
+.accordion > div.show > span::after {
+    content: "\2212";
+}
+
+.accordion > div > span:hover,
+.accordion > div.show > span {
+    background-color: rgb(187, 105, 104);
+    opacity: 1;
+}
+
+.accordion > div > div {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.200);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.6s;
+    padding: 0 15px;
+}
+
+.accordion > div.show > div {
+    padding: 15px;
+}
