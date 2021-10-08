@@ -1,26 +1,3 @@
-// let paragraphs = document.querySelectorAll("p");
-// paragraphs.forEach(paragraph =>{
-//     if(paragraph.getAttribute('new') == 'true'){
-//         paragraph.setAttribute('title', 'This is a new data!')
-//     }
-//     else {
-//         paragraph.setAttribute('title', 'This is an old data!')
-//     }
-//     console.log(paragraph.innerHTML)
-// })
-
-// let header = document.querySelector("#header");
-// console.log(header.classList);
-// header.classList.add("mr-5","mt-4")
-// header.setAttribute('title', 'Hello, World!');
-
-// let btn = document.querySelector("button");
-// btn.addEventListener('mousemove', e => {
-//     e.target.textContent = "😃"
-// })
-// btn.addEventListener('mouseout', e => {
-//     e.target.textContent = "😕"
-// })
 let accordion = document.querySelector(".accordion");
 
 Array.from(accordion.children).forEach(wrapper => {
