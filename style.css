@@ -20,6 +20,7 @@ body {
 }
 
 .accordion > div:first-child > span {
+    margin-top: 5%;
     border-radius: 10px 10px 0 0;
 }
 
